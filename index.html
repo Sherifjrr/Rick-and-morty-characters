@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rick and Morty characters Search Engine Find your Favorite Character ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="/styles/favicon-32x32.png" rel="icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Rick and Morty Characters</title>
+</head>
+<nav>
+    <ul class="nav-ul">
+        <li class="nav-li"><button>Home</button></li>
+        <li class="nav-li"><a href="#char">Characters</a></li>
+        <li><img src="styles/logo.svg" alt="Rick and morty logo"></li>
+        <li><a href="#basic-search">About The Show</a></li>
+    </ul>
+    <ul class="navMobile">
+        <li><img src="styles/logo.svg" alt="Rick and morty logo"></li>
+    </ul>
+</nav>
+<body>
+    <div class="main">
+        <div class="text">
+            <h1>Rick & Morty Search engine</h1>
+            <p>Find Your Favorite<br>Rick & Morty Character</p>
+            <div class="search-bar">
+                <div class="basic-search" id="basic-search">
+                    <input type="text" name="search" alt="Rick & Morty Search engine" id="search" placeholder="wabba labba dub dub ....">
+                    <label id="invalid"></label>
+                    <div>
+                        <button id="search-button">Search</button>
+                        <button id="filter">Filter</button>
+                    </div>
+                </div>
+                <div class="search-filter" id="searchFilter">
+                    <div class="column">
+                        <span>By Gender</span>
+                        <select id="gender">
+                            <option value="">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="genderless">Genderless</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <span>By Status</span>
+                        <select id="status">
+                            <option value="">Status</option>
+                            <option value="alive">Alive</option>
+                            <option value="dead">Dead</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                        <button id="reset">Reset</button>
+                    </div>
+                    <div class="column">
+                        <span>By Species</span>
+                        <select id="species">
+                            <option value="">Species</option>
+                            <option value="human">Human</option>
+                            <option value="humanoid">Humanoid</option>
+                            <option value="alien">Alien</option>
+                            <option value="robot">Robot</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="styles/mortyandrick-portal.svg" alt="Rick and morty portal gate">
+    </div>
+    <div class="results">
+        <div class="result">
+            <img class="img" src="" alt="Rick and Morty Search result">
+            <div id="details">
+                <h2 id="name" class="name"></h2>
+                <div class="characterStatus">
+                    <span class="liveStatus"></span>
+                    <h4 class="liveSpecies"></h4>
+                </div>
+                <h4>Last known location :</h4>
+                <h3 class="location"></h3>
+                <h4>First Episode seen in :</h4>
+                <h3 class="episode"></h3>
+            </div> 
+        </div>
+            <div class="result">
+                <img class="img" src="" alt="Rick and Morty Search result">
+                <div id="details">
+                    <h2 id="name" class="name"></h2>
+                    <div class="characterStatus">
+                        <span class="liveStatus"></span>
+                        <h4 class="liveSpecies"></h4>
+                    </div>
+                    <h4>Last known location :</h4>
+                    <h3 class="location"></h3>
+                    <h4>First Episode seen in :</h4>
+                    <h3 class="episode"></h3>
+                </div>
+            </div>
+            <div class="result">
+                <img class="img" src="" alt="Rick and Morty Search result">
+                <div id="details">
+                    <h2 id="name" class="name"></h2>
+                    <div class="characterStatus">
+                        <span class="liveStatus"></span>
+                        <h4 class="liveSpecies"></h4>
+                    </div>
+                    <h4>Last known location :</h4>
+                    <h3 class="location"></h3>
+                    <h4>First Episode seen in :</h4>
+                    <h3 class="episode"></h3>
+                </div>
+            </div>
+            <div class="result">
+                <img class="img" src="" alt="Rick and Morty Search result">
+                <div id="details">
+                    <h2 id="name" class="name"></h2>
+                    <div class="characterStatus">
+                        <span class="liveStatus"></span>
+                        <h4 class="liveSpecies"></h4>
+                    </div>
+                    <h4>Last known location :</h4>
+                    <h3 class="location"></h3>
+                    <h4>First Episode seen in :</h4>
+                    <h3 class="episode"></h3>
+                </div>
+            </div>
+    </div>
+    <div class="quote-img">
+        <img src="styles/quote.jpg" alt="You ask a lot of questions, Morty,Not very charismatic">
+        <p><i style="font-size: 25px; " class="fas fa-quote-left"></i> You ask a lot of questions, Morty,<br>Not very charismatic <i style="font-size: 25px;" class="fas fa-quote-right"></i></p>
+    </div>
+
+    <div class="characters"> 
+        <div class="refreshButton" id="char">
+            <h1>Characters</h1>
+            <button id="refresh"><i class="fa fa-refresh"></i></button>
+        </div>
+        <div class="character">
+            <img src="" alt="Random Rick and Morty Search result" class="randomCharacterImg">
+            <div class="randomDetails">
+                <h2 class="randomName"></h2>
+                <div class="randomCharacterStatus">
+                    <span class="randomLiveStatus"></span>
+                    <h4 class="randomLiveSpecies"></h4>
+                </div>
+                <h4>Last known location :</h4>
+                <h3 class="randomLocation"></h3>
+                <h4>First Episode Seen in :</h4>
+                <h3 class="randomEpisode"></h3>
+            </div>
+        </div>
+        <div class="character">
+            <img src="" alt="Random Rick and Morty Search result" class="randomCharacterImg">
+            <div class="randomDetails">
+                <h2 class="randomName"></h2>
+                <div class="randomCharacterStatus">
+                    <span class="randomLiveStatus"></span>
+                    <h4 class="randomLiveSpecies"></h4>
+                </div>
+                <h4>Last known location :</h4>
+                <h3 class="randomLocation"></h3>
+                <h4>First Episode Seen in :</h4>
+                <h3 class="randomEpisode"></h3>
+            </div>
+        </div>
+        <div class="character">
+            <img src="" alt="Random Rick and Morty Search result" class="randomCharacterImg">
+            <div class="randomDetails">
+                <h2 class="randomName"></h2>
+                <div class="randomCharacterStatus">
+                    <span class="randomLiveStatus"></span>
+                    <h4 class="randomLiveSpecies"></h4>
+                </div>
+                <h4>Last known location :</h4>
+                <h3 class="randomLocation"></h3>
+                <h4>First Episode Seen in :</h4>
+                <h3 class="randomEpisode"></h3>
+            </div>
+        </div>
+        <div class="character">
+            <img src="" alt="Random Rick and Morty Search result" class="randomCharacterImg">
+            <div class="randomDetails">
+                <h2 class="randomName"></h2>
+                <div class="randomCharacterStatus">
+                    <span class="randomLiveStatus"></span>
+                    <h4 class="randomLiveSpecies"></h4>
+                </div>
+                <h4>Last known location :</h4>
+                <h3 class="randomLocation"></h3>
+                <h4>First Episode Seen in :</h4>
+                <h3 class="randomEpisode"></h3>
+            </div>
+        </div>
+        <div class="character">
+            <img src="" alt="Random Rick and Morty Search result" class="randomCharacterImg">
+            <div class="randomDetails">
+                <h2 class="randomName"></h2>
+                <div class="randomCharacterStatus">
+                    <span class="randomLiveStatus"></span>
+                    <h4 class="randomLiveSpecies"></h4>
+                </div>
+                <h4>Last known location :</h4>
+                <h3 class="randomLocation"></h3>
+                <h4>First Episode Seen in :</h4>
+                <h3 class="randomEpisode"></h3>
+            </div>
+        </div>
+        <div class="character">
+            <img src="" alt="Random Rick and Morty Search result" class="randomCharacterImg">
+            <div class="randomDetails">
+                <h2 class="randomName"></h2>
+                <div class="randomCharacterStatus">
+                    <span class="randomLiveStatus"></span>
+                    <h4 class="randomLiveSpecies"></h4>
+                </div>
+                <h4>Last known location :</h4>
+                <h3 class="randomLocation"></h3>
+                <h4>First Episode Seen in :</h4>
+                <h3 class="randomEpisode"></h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <P>Made With &#128150; By </i> <a target="_blank" href="https://twitter.com/Sherifjrr">Sherif Jr. <i class="fab fa-twitter fa-lg"></i></a></P>
+        <p>All Copyrights &#169; Reserved</p>
+    </footer>
+
+    <script src="Js/main.js"></script>
+</body>
+</html>
