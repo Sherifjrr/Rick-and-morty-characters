@@ -451,10 +451,6 @@ footer {
     }
 }
 @media (max-width : $mediaMobile) {
-    html {
-        min-width: 420px;
-        max-width: 480px;
-    }
     .nav-ul {
         display: none;
     }

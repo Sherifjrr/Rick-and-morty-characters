@@ -542,10 +542,6 @@ footer p a:hover {
 }
 
 @media (max-width: 480px) {
-  html {
-    min-width: 420px;
-    max-width: 480px;
-  }
   .nav-ul {
     display: none;
   }
