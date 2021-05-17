@@ -8,4 +8,4 @@ A project for fetching Api and push the data to the UI
 - Html
 
 Used Api : https://rickandmortyapi.com/
-### Live at : rickandmortycharacters.club
+### Live at : https://rickandmortycharacters.club
